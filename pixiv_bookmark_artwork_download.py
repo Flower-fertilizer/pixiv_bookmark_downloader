@@ -80,9 +80,11 @@ def download_file(url, proxies):
 user_id = 'xxx'
 cookie = 'xxx'
 user_agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0'
-proxy = 'http://xxx'
+proxy = 'http://xxx:xxx'
 start_page = 1
+# bookmark start page
 end_page = 1
+# bookmark end page
 
 filtered_ids = get_filtered_ids(user_id, cookie, user_agent, proxy, start_page, end_page)
 download_images(filtered_ids, cookie, user_agent, proxy)
