@@ -62,6 +62,7 @@ def download_images(filtered_ids, cookie, user_agent, proxy):
 
 def download_file(url, proxies):
     downloaders = {
+        'User-Agent': user_agent,
         'Referer': 'https://www.pixiv.net/'
     }
     response = requests.get(url, headers=downloaders, proxies=proxies, stream=True)
